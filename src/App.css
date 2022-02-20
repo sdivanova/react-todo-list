@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  margin:auto;
+  width:50%;
+  /*background-color: #fae2d2;*/
+  font-size: 2em;
+  height:100vw;
+}
+
+.TodoList{
+  list-style: none;
+  text-align: left;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+.TodoTask>*{
+  margin: 10px;
+}
+
+.TodoTask{
+  border-bottom: 1px solid #868a9c;
+}
+
+.App button{
+  font-family: "Open Sans", sans-serif;
+  border:0;
+}
+
+.FlowRight {
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  font-size: 0.8em;
+  border-radius: 2px;
+  border:0;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #858585;
+  color:#f0f0f0;
+  cursor: pointer;
+}
+button:hover{
+  color: white;
+}
+button:active{
+  background-color: #696969;
+  color:#a1a1a1;
+}
+
+.TodoTask button{
+  padding-left:15px;
+  padding-right:15px;
+}
+
+input[type="checkbox"]{
+  appearance: none;
+  margin-top:10px;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: inline-grid;
+  place-content: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+h1{
+  text-shadow:
+          0 0 7px #111,
+          0 0 10px #111;
+}
