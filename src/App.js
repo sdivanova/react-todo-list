@@ -6,7 +6,7 @@ export class App extends React.Component{
   constructor(props) {
     super(props);
     this.state= {
-      todos:todos
+      todos:[]
     }
 
     this.addTodo=this.addTodo.bind(this)
